@@ -1,0 +1,51 @@
+.card-panel.login-card {
+    width:  50%;
+    margin:  0 auto;
+    margin-top: 100px;
+        background: rgba(255,255,255,0.5);
+}
+.admin-log-title {
+      text-align: center;
+    font-size: 27px;
+    position: relative;
+    top: 65px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    background: rgba(0,0,0,0.5);
+}
+label.lab {
+    color: #332727;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label
+{
+    color: #332727 !important;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly])
+{
+        border-bottom: 1px solid #332727;
+    -webkit-box-shadow: 0 1px 0 0 #332727;
+    
+}
+label.lab: focus {
+    color: #332727 !important;
+}
+.log-div {
+    text-align:  center;
+    /* background:  red; */
+}
+
+.log-div a {
+    background: #544b4b;
+}
+a.waves-effect.waves-light.btn.loginbtn:hover {
+    background: transparent !important;
+    border: 1px solid #544b4b;
+    color: #544b4b;
+    font-weight: 500;
+}
