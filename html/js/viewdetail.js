@@ -11,15 +11,5 @@ $(function(){
 		});
 	});
 
-	$(".viewbtn").on("click",function(){
-
-		 var data = {
-		 	"class" : $("#class").val(),
-		 	"division" : $("#division").val()
-		 };
-
-		 $.post(baseurl+"ViewDetail/viewdataa/"+data,function(data){
-		 		var check = parseJSON(data);
-		 });
-	});
+	
 });

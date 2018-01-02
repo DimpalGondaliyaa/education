@@ -1,17 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Change extends CI_Controller {
+class Admin extends CI_Controller {
 
 	
 	public function index()
 	{		
-		if(!$this->session->userdata('email'))
-		{
-			header("Location:".base_url()."login");
+
+		if(!$this->session->userdata('email')){
+			header('location:login');
 		}
 
-		
 		$headerData = array(
 			"pageTitle" => "Change",
 			"stylesheet" => array("change.css")
@@ -20,7 +19,7 @@ class Change extends CI_Controller {
 			"jsFiles" => array("change.js")
 		);
 		$viewData = array(
-			"viewName" => "change",
+			"viewName" => "admin",
             "viewData" => array(),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
@@ -29,17 +28,13 @@ class Change extends CI_Controller {
 	}
 	public function add_reg_data()
 	{
-		if(!$this->session->userdata('email'))
-		{
-			header("Location:".base_url()."login");
-		}
 		$this->load->model("register_model");
 		$addregdata = array('user_reg_id' => $_POST['user_reg_id'],
 		'fname' => $_POST['fname'],
 		'lname' => $_POST['lname'],
 		'rollno' => $_POST['rollno'],
 		'class' => $_POST['class'],
-		'division' => $_POST['division'],
+		'div' => $_POST['div'],
 		'mobile' => $_POST['mobile'],
 		"user_id"=>$_POST['user_id'],
 		'password' => $_POST['password'],
@@ -50,7 +45,7 @@ class Change extends CI_Controller {
 		$updateEvent=array('images'=>$CatImage);
 		$this->register_model->addcatimg($updateEvent,$id);
 
-		$config["upload_path"]='html/images/student';
+		$config["upload_path"]='html/images';
 		$config["allowed_types"]='gif|png|jpg|jpeg';
 		$config["file_name"]=$id."_catImage";
 		$config["remove_spaces"]=TRUE;
@@ -73,6 +68,7 @@ class Change extends CI_Controller {
 		$pass=$this->verify_model->varify($data);
 		echo json_encode($pass);
 	}
+
 	public function add_teachreg_data()
 	{
 		$this->load->model("register_model");

@@ -57,7 +57,7 @@ $('select').material_select();
             return false;
         }
 
-         var x = document.forms["regformm"]["div"].value;
+         var x = document.forms["regformm"]["division"].value;
         if (x == "") {
             alert("Div must be filled out");
             return false;

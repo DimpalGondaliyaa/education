@@ -38,8 +38,8 @@ $(function(){
          	if(check.status=="ok")
          	{
                 /*window.location=baseurl+'change';*/
-         		alert("login ok");
-                window.location.href=baseurl+'change';
+         		/*alert("login ok");*/
+                window.location.href=baseurl+'admin';
                 
          	}
          	/*else if(check.status=="fail")

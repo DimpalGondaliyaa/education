@@ -25,6 +25,8 @@ class viewdata extends CI_Controller {
 	{
 		$this->load->model('view_model');
 		$fetched_view = $this->view_model->fetch_view_data($id);
+
+		
 		$headerData = array(
 			"pageTitle" => "ViewDetail",
 			"stylesheet" => array("viewdetail.css")

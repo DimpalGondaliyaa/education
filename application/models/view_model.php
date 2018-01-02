@@ -8,7 +8,14 @@ class view_model extends CI_Model
 		$sql = $data->row_array();
 		return $sql;
 	}
-	
+	/*public function fetch_class($class)
+	{
+		$class = $class['class'];
+		$div = $div['div'];
+		$sql = $this->db->query("select * from register where class='$class'");
+		$result = $sql->row_array();
+		return $result; 
+	}*/
 }
 
 ?>

@@ -43,8 +43,8 @@ tr:nth-child(even) {
     <td><?php echo $fetched_view['rollno']; ?></td>
     <td><?php echo $fetched_view['class']; ?></td>
     <td><?php echo $fetched_view['div']; ?></td>
-     <td><?php echo $fetched_view['mobile']; ?></td>
-       <td><?php echo $fetched_view['user_id']; ?></td>
+    <td><?php echo $fetched_view['mobile']; ?></td>
+    <td><?php echo $fetched_view['user_id']; ?></td>
     <td><?php echo $fetched_view['password']; ?></td>
     <td><?php echo $fetched_view['images']; ?></td>
     <td><?php echo $fetched_view['address']; ?></td>

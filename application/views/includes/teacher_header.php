@@ -34,10 +34,7 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Logo</a>
       <ul id="nav-mobile admin-menu" class="right hide-on-med-and-down chenge-ul">
-        <li><a class="menu-uL" id="reg">Register</a></li>
-        <li><a class="menu-uL" id="change">change password</a></li>
-        <li><a href="user_manager" class="menu-uL">manage user</a></li>
-      <li><a class="logout" href="<?php echo base_url(); ?>admin/logout"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+      <li><a class="logout" href="<?php echo base_url(); ?>teacher_login/logout"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </nav>

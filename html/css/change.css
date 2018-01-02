@@ -1,3 +1,4 @@
+
 .card-panel.chack-card {
    width: 40%;
     margin: 0 auto;
@@ -12,12 +13,12 @@
     text-transform: capitalize;
     font-weight: 600;
 }
-.change-nav
+/*.change-nav
 {
     background-color: rgba(255,255,255,0.8) !important;
     height: 100px;
 }
-
+*/
 #menu-uL
 {
      line-height: 6;
@@ -25,16 +26,16 @@
 .parallax-container {
     position: relative;
     overflow: hidden;
-    height: 800px;
+    height: 100vh;
     background: rgba(0,0,0,0.5);
 }
-a.menu-uL {
+/*a.menu-uL {
     color: #2d2727;
     line-height: 5;
     font-size: 19px;
     text-transform:  capitalize;
     /* border: 1px solid; */
-}
+}*/
 a.waves-effect.waves-light.btn.chack {
     background:  black;
     text-align:  center;
@@ -100,3 +101,60 @@ input.form-control {
           margin: 0 0 19px 0 !important;
 }
 /*-----------------------varify css-----------------*/
+
+
+
+
+
+
+
+
+
+/*=============== admin menu area ==================*/
+
+.submenu-area {
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    margin-top: 200px;
+}
+.menuBox {
+    background: #ffffffd1;
+    padding: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 5px solid #33438c7d;
+    height: 150px;
+    border-radius: 3px;
+    -webkit-transitiona: all 0.2s ease-in-out;
+    -moz-transitiona: all 0.2s ease-in-out;
+    -o-transitiona: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 2px 5px #00000087;
+}
+
+
+}
+.menuBox:hover {
+    cursor: pointer;
+    background: #33438c;
+    padding: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 5px solid #fefeff7d;
+    height: 150px;
+    border-radius: 3px;
+    color: #ffffffc7;
+    -webkit-transitiona: all 0.2s ease-in-out;
+    -moz-transitiona: all 0.2s ease-in-out;
+    -o-transitiona: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.menuData h5 {
+    line-height: 75px;
+}
+.submenu-box {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
